@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import './style.css';
+
 
 class App extends Component {
   constructor() {
@@ -95,4 +95,4 @@ class App extends Component {
               }
             }
             
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById('page-top'));

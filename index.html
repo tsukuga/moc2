@@ -23,7 +23,18 @@ class MakeTable extends React.Component{
       const date = ["aaa","bbb","ccc","ddd","eee","fff","ggg"];
       
     return (
-<button type="button"}>set反映</button>
+<React.Fragment>
+<table>
+<tbody>
+<tr>
+{date.map((e)=>(
+<td>{e}</td>
+))}
+</tr>
+</tbody>
+</table>
+<button type="button">set反映</button>
+</React.Fragment>
 )
 
 

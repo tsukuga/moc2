@@ -16,28 +16,32 @@
 <body id="page-top">
     
     <script type="text/babel">
+ 
+class MakeTable extends React.Component{
+    render(){
     
-    class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'React'
-    };
-  }
-
-   render() {
+      const date = ["aaa","bbb","ccc","ddd","eee","fff","ggg"];
+      
     return (
-      <div>
-    <button>
-      Logout
-    </button>
-      </div>
-    );
-  }
-}
+<React.Fragment>
+<table>
+<tbody>
+<tr>
+{date.map((e)=>(
+<td>{e}</td>
+))}
+</tr>
+</tbody>
+</table>
+</React.Fragment>
+)
 
-            
-render(<App />, document.getElementById('page-top'));
+
+ 
+   }
+  }
+  
+  ReactDOM.render(<MakeTable/>, document.getElementById('root'));
     </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
